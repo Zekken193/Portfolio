@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Mackenly Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">
+    <img id="themeIcon" src="https://img.icons8.com/ios/50/moon-symbol.png" alt="Theme Icon" />
+  </button>
+
+  <img id="luffyIcon" src="luffy.png" alt="Cool GIF" />
+
+
+  <div class="container">
+    <h1 class="typing-text" >hi! I'm <span class="typing-text">Mackenly</span></h1>
+    <p>3rd year IT student, aspiring web developer</p>
+
+    <div class="icons">
+      <div class="icon-btn" onclick="showPopup('about')">
+        <img src="https://img.icons8.com/ios/50/info--v1.png" alt="About Icon">
+        <span>about</span>
+      </div>
+      <div class="icon-btn" onclick="showPopup('links')">
+        <img src="https://img.icons8.com/ios/50/link--v1.png" alt="Links Icon">
+        <span>links</span>
+      </div>
+      <div class="icon-btn" onclick="showPopup('work')">
+        <img src="https://img.icons8.com/ios/50/briefcase--v1.png" alt="Work Icon">
+        <span>work</span>
+      </div>
+      <div class="icon-btn" onclick="showPopup('faq')">
+        <img src="https://img.icons8.com/ios/50/help--v1.png" alt="FAQ Icon">
+        <span>faq</span>
+      </div>
+      <div class="icon-btn" onclick="showPopup('contact')">
+        <img src="https://img.icons8.com/ios/50/new-post--v1.png" alt="Contact Icon">
+        <span>contact</span>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="about" class="popup">
+    <div class="popup-content about-popup">
+      <span class="close" onclick="hidePopup('about')">×</span>
+      <img src="pfp.jpg" alt="Profile Picture" class="profile-pic">
+      <h2 class="name">Mackenly</h2>
+      <p class="subtitle">3rd Year IT Student, Aspiring Web Developer</p>
+      <ul class="about-list">
+        <li>I enjoy building responsive websites,</li>
+        <li>Learning new web technologies,</li>
+        <li>Creating cool UI designs, and</li>
+        <li>Improving my coding skills daily!</li>
+      </ul>
+    </div>
+  </div>
+
+
+  <div id="links" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="hidePopup('links')">×</span>
+      <h2>My Links</h2>
+      <ul class="link-list">
+        <li>
+          <img src="https://img.icons8.com/ios/50/github--v1.png" class="icon" alt="GitHub Icon" />
+          <a href="https://github.com/Zekken193" target="_blank">GitHub</a>
+        </li>
+        <li>
+          <img src="https://img.icons8.com/ios/50/twitter--v1.png" class="icon" alt="Twitter Icon" />
+          <a href="https://twitter.com/Vanitas" target="_blank">Twitter</a>
+        </li>
+        <li>
+          <img src="https://img.icons8.com/ios/50/youtube-play--v1.png" class="icon" alt="YouTube Icon" />
+          <a href="https://youtube.com/@ZekkenOfficial" target="_blank">YouTube</a>
+        </li>
+        <li>
+          <img src="https://img.icons8.com/ios/50/link--v1.png" class="icon" alt="Portfolio Icon" />
+          <a href="https://yourwebsite.com" target="_blank">Portfolio</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+
+  <div id="work" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="hidePopup('work')">×</span>
+      <h2>My Work</h2>
+      <p>Recent projects and frontend samples go here.</p>
+    </div>
+  </div>
+
+  <div id="faq" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="hidePopup('faq')">×</span>
+      <h2>FAQ</h2>
+      <p>Frequently asked questions will be listed here.</p>
+      <ul class="faq-list">
+        <li class="question">What is your favorite programming language?</li>
+         <li class="typing-text" >My favorite language for now is PhP</li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="contact" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="hidePopup('contact')">×</span>
+      <h2>Contact</h2>
+      <p>Reach me at <a href="mailto:zekkenofficial0777@gmail.com">zekkenofficial0777@gmail.com</a></p>
+    </div>
+  </div>
+
+  <img id="wingpng" src="pngwing.png" alt="pngwing" style="cursor: pointer;" />
+
+  <audio id="clickSound">
+    <source src="clicked.wav" type="audio/mpeg" />
+    Your browser does not support the audio element.
+  </audio>
+
+
+  <audio id="bgMusic" loop>
+    <source src="music.mp3" type="audio/mpeg" />
+    Your browser does not support the audio element.
+  </audio>
+
+  <audio id="luffyMusic" loop>
+    <source src="luffy-laugh.mp3" type="audio/mpeg" />
+    Your browser does not support the audio element.
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+
+<footer>
+  <p>&copy; 2025 Mackenly. All rights reserved.</p>
+</footer>
+
+
+</html>
