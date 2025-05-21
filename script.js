@@ -53,7 +53,7 @@ wingpng.addEventListener('click', () => {
 const luffyMusic = document.getElementById('luffyMusic');
 let isLuffyPlaying = false;
 
-const luffyIcon = document.getElementById('cornerGif'); // or use `luffyIcon` if renamed
+const luffyIcon = document.getElementById('luffyIcon');
 luffyIcon.addEventListener('click', () => {
   if (!isLuffyPlaying) {
     luffyMusic.play();
